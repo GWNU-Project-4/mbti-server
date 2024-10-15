@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI 추천 시스템</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-
+<div class="container">
+    <h1>MBTI에 따른 추천 시스템</h1>
+    <div class="input-group">
+        <label for="mbti-input">당신의 MBTI를 입력하세요:</label>
+        <input type="text" id="mbti-input" placeholder="예: ENFJ">
+        <button id="recommend-button">추천받기</button>
+    </div>
+    <div id="recommendations" class="recommendations">
+        <!-- 추천 결과가 여기에 표시됩니다 -->
+    </div>
+</div>
+<script src="./js/main.js"></script>
 </body>
 </html>
