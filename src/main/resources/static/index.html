@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBTI 추천 시스템</title>
+    <title>MBTI 여행지 및 자동차 추천</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 <div class="container">
-    <h1>MBTI에 따른 추천 시스템</h1>
-    <div class="input-group">
-        <label for="mbti-input">당신의 MBTI를 입력하세요:</label>
-        <input type="text" id="mbti-input" placeholder="예: ENFJ">
-        <button id="recommend-button">추천받기</button>
+    <h1>여행지 및 자동차 추천</h1>
+
+    <div class="input-section">
+        <label for="mbti">MBTI 입력:</label>
+        <input type="text" id="mbti" placeholder="예: ESFJ">
+
+        <label for="situation">상황 선택:</label>
+        <select id="situation">
+            <option value="solo">솔로</option>
+            <option value="couple">커플</option>
+            <option value="family">가정</option>
+        </select>
+
+        <button id="recommendBtn">추천 받기</button>
     </div>
-    <div id="recommendations" class="recommendations">
-        <!-- 추천 결과가 여기에 표시됩니다 -->
+
+    <div class="result-section" id="result">
+        <!-- 추천 결과가 표시될 영역 -->
     </div>
 </div>
+
 <script src="./js/main.js"></script>
 </body>
 </html>
